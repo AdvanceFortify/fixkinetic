@@ -12,15 +12,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-teal: #02B4AC;
+  --color-teal-dark: #027A75;
+  --color-ink: #1A1A1A;
+  --color-ink-soft: #4A4A4A;
+  --color-surface: #F5F5F5;
+  --color-surface-dark: #0F0F10;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
